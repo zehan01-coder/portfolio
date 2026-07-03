@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SOUNDVAULT | Best Productions in Finland</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Epilogue:wght@400;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#002f67",
+                    "electric-blue": "#00A3FF",
+                    "primary-fixed": "#ffdad4",
+                    "on-secondary-fixed": "#001d33",
+                    "on-error-container": "#ffdad6",
+                    "outline": "#b18780",
+                    "surface-container-lowest": "#0e0e0e",
+                    "background": "#131313",
+                    "surface-container": "#1f1f1f",
+                    "primary": "#ffb4a8",
+                    "surface-bright": "#393939",
+                    "secondary": "#98cbff",
+                    "surface-container-highest": "#353535",
+                    "on-secondary": "#003354",
+                    "outline-variant": "#603e39",
+                    "on-surface-variant": "#ebbbb4",
+                    "on-surface": "#e2e2e2",
+                    "surface-container-low": "#1b1b1b",
+                    "tertiary-fixed-dim": "#acc7ff",
+                    "inverse-surface": "#e2e2e2",
+                    "tertiary": "#acc7ff",
+                    "surface-mute": "#1A1A1A",
+                    "on-background": "#e2e2e2",
+                    "surface-dark": "#121212",
+                    "secondary-fixed": "#cfe5ff",
+                    "tertiary-fixed": "#d7e2ff",
+                    "on-secondary-fixed-variant": "#004a77",
+                    "primary-fixed-dim": "#ffb4a8",
+                    "inverse-on-surface": "#303030",
+                    "surface-tint": "#ffb4a8",
+                    "error": "#ffb4ab",
+                    "on-tertiary-container": "#00285b",
+                    "surface": "#131313",
+                    "on-primary": "#690100",
+                    "tertiary-container": "#488fff",
+                    "on-error": "#690005",
+                    "secondary-container": "#00a2fd",
+                    "on-primary-container": "#5c0000",
+                    "inverse-primary": "#c00100",
+                    "on-tertiary-fixed": "#001a40",
+                    "on-primary-fixed": "#410000",
+                    "on-secondary-container": "#003558",
+                    "error-container": "#93000a",
+                    "on-primary-fixed-variant": "#930100",
+                    "surface-container-high": "#2a2a2a",
+                    "surface-dim": "#131313",
+                    "on-tertiary-fixed-variant": "#004491",
+                    "text-primary": "#FFFFFF",
+                    "primary-container": "#ff5540",
+                    "surface-variant": "#353535",
+                    "secondary-fixed-dim": "#98cbff",
+                    "neon-red": "#FF0000"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "128px",
+                    "stack-sm": "32px",
+                    "gutter": "24px",
+                    "unit": "8px",
+                    "margin-desktop": "64px",
+                    "stack-md": "64px",
+                    "margin-mobile": "16px",
+                    "container-max": "1440px"
+            },
+            "fontFamily": {
+                    "display-xl": ["Anton"],
+                    "label-bold": ["Epilogue"],
+                    "body-lg": ["Epilogue"],
+                    "headline-lg": ["Anton"],
+                    "display-xl-mobile": ["Anton"],
+                    "title-lg": ["Epilogue"],
+                    "headline-md": ["Anton"],
+                    "body-md": ["Epilogue"]
+            },
+            "fontSize": {
+                    "display-xl": ["96px", {"lineHeight": "90%", "letterSpacing": "-0.04em", "fontWeight": "400"}],
+                    "label-bold": ["14px", {"lineHeight": "100%", "letterSpacing": "0.05em", "fontWeight": "800"}],
+                    "body-lg": ["18px", {"lineHeight": "160%", "fontWeight": "400"}],
+                    "headline-lg": ["48px", {"lineHeight": "100%", "fontWeight": "400"}],
+                    "display-xl-mobile": ["56px", {"lineHeight": "95%", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+                    "title-lg": ["20px", {"lineHeight": "140%", "letterSpacing": "0.1em", "fontWeight": "700"}],
+                    "headline-md": ["32px", {"lineHeight": "110%", "fontWeight": "400"}],
+                    "body-md": ["16px", {"lineHeight": "160%", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            line-height: 1;
+            text-transform: none;
+            letter-spacing: normal;
+            word-wrap: normal;
+            white-space: nowrap;
+            direction: ltr;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+        .animate-marquee {
+            animation: marquee 20s linear infinite;
+        }
+        .brutalist-border {
+            border: 2px solid white;
+        }
+        .brutalist-border-thick {
+            border: 4px solid white;
+        }
+        .texture-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.05;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background selection:bg-neon-red selection:text-white overflow-x-hidden">
+<!-- TopAppBar -->
+<header class="fixed top-0 left-0 w-full px-margin-mobile md:px-margin-desktop h-20 flex items-center justify-between bg-background/80 dark:bg-background/80 backdrop-blur-xl z-50 border-b-2 border-on-background">
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-background hover:text-neon-red transition-colors duration-300" onclick="document.getElementById('mobile-drawer').classList.remove('translate-x-full')">menu</button>
+<div class="font-headline-md text-headline-md tracking-tighter text-on-background dark:text-on-background uppercase">SOUNDVAULT</div>
+</div>
+<div class="hidden md:flex gap-gutter font-label-bold text-label-bold">
+<a class="text-electric-blue hover:text-neon-red transition-colors duration-300" href="#">HOME</a>
+<a class="text-on-background hover:text-neon-red transition-colors duration-300" href="#">EVENTS</a>
+<a class="text-on-background hover:text-neon-red transition-colors duration-300" href="#">STORY</a>
+<a class="text-on-background hover:text-neon-red transition-colors duration-300" href="#">JOIN US</a>
+</div>
+<button class="material-symbols-outlined text-on-background scale-95 active:opacity-80 transition-all hover:text-neon-red">add</button>
+</header>
+<!-- Navigation Drawer (Mobile Overlay) -->
+<div class="fixed inset-0 z-[60] flex flex-col justify-center p-margin-mobile bg-background dark:bg-background translate-x-full transition-transform duration-500" id="mobile-drawer">
+<button class="absolute top-8 right-8 material-symbols-outlined text-on-background text-4xl" onclick="document.getElementById('mobile-drawer').classList.add('translate-x-full')">close</button>
+<div class="mb-stack-sm font-display-xl-mobile text-display-xl-mobile text-neon-red">SOUNDVAULT</div>
+<nav class="flex flex-col gap-6">
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-neon-red border-l-8 border-neon-red pl-4 active:translate-x-2 transition-transform" href="#">HOME</a>
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-background opacity-60 hover:opacity-100 pl-4 hover:bg-on-background hover:text-background transition-all duration-300" href="#">EVENTS</a>
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-background opacity-60 hover:opacity-100 pl-4 hover:bg-on-background hover:text-background transition-all duration-300" href="#">STORY</a>
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-background opacity-60 hover:opacity-100 pl-4 hover:bg-on-background hover:text-background transition-all duration-300" href="#">JOIN US</a>
+<a class="font-headline-lg-mobile text-headline-lg-mobile text-on-background opacity-60 hover:opacity-100 pl-4 hover:bg-on-background hover:text-background transition-all duration-300" href="#">CONTACT</a>
+</nav>
+</div>
+<!-- Hero Section -->
+<section class="relative h-screen w-full flex flex-col justify-center items-center overflow-hidden pt-20">
+<div class="absolute inset-0 z-0">
+<div class="absolute inset-0 bg-black/60 z-10"></div>
+<img class="w-full h-full object-cover" data-alt="A high-intensity, high-contrast photograph of a massive Finnish techno warehouse rave. Beams of electric blue and neon red strobe lights cut through a thick layer of atmospheric smoke and haze. The crowd is a dark silhouette of movement and energy, capturing the raw industrial spirit of the underground electronic music scene in Helsinki." src="https://lh3.googleusercontent.com/aida/AP1WRLtqwdTX1aAkXZ3uokljRRut7pZ3arA6fRBxTxd3ZGMnLUyY31lGJbleXVtEbRpyxGwRtsvp1RUiTF2rPFRiMecRUEmNgFYF8skgP1u-7ttBvPmSf10Qy7KjoSJuF0mvvSfjUF25UVTGP2GbJnvhe5oc7tYhhB6PpkhiJs0U7ialLEiCaYf7c_GfyRbC1pbSdJbQyHRmezUICZvnOiWuBDCJRUHS4BzWPHstUBqF2yKZqYdF9bg5YFUBFu0"/>
+</div>
+<div class="relative z-20 text-center px-margin-mobile flex flex-col items-center max-w-container-max">
+<img alt="SOUNDVAULT" class="w-full max-w-[600px] mb-stack-sm brightness-200" src="https://lh3.googleusercontent.com/aida/AP1WRLubSE5m-54Dyx2vQTYDDURQiB2w0mtWJI9y1HYeniQLsxGkLZVWmVLSpTnFlMrtE_eVm7UFdih9BzqvZ-1fSkq7vhcuFbuIoi8L6cb8lWI9huoqZzdr7pgQq3qEHgKdEnVsxN8__Y6OLz0ddN8PtwU3nNkMlsd1KOZO184NRlOCOtVa-9P8d6ZC9WyV7c0jVwr_27TV9sAUNeRZXv1q16CtBKrP6nQnOsCNtJ-sDzyOMK_Mj8IC9YFYFTiO"/>
+<h1 class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-white uppercase mb-4">
+                BEST PRODUCTIONS <br class="hidden md:block"/> IN FINLAND
+            </h1>
+<p class="font-title-lg text-title-lg text-electric-blue tracking-[0.2em] uppercase">
+                Techno - Hard Techno - Hardstyle
+            </p>
+</div>
+<!-- Marquee Ticker -->
+<div class="absolute bottom-0 w-full overflow-hidden bg-neon-red py-2 z-20 brutalist-border-thick border-x-0 border-b-0">
+<div class="flex whitespace-nowrap animate-marquee">
+<span class="font-headline-md text-headline-md text-white px-8">NO FILMING. ONLY DANCING.</span>
+<span class="font-headline-md text-headline-md text-white px-8">NO FILMING. ONLY DANCING.</span>
+<span class="font-headline-md text-headline-md text-white px-8">NO FILMING. ONLY DANCING.</span>
+<span class="font-headline-md text-headline-md text-white px-8">NO FILMING. ONLY DANCING.</span>
+</div>
+</div>
+</section>
+<!-- Social Bar -->
+<div class="flex justify-center gap-8 py-stack-sm border-b-2 border-on-background">
+<a class="hover:text-neon-red transition-all scale-125" href="#"><span class="material-symbols-outlined">camera</span></a>
+<a class="hover:text-neon-red transition-all scale-125" href="#"><span class="material-symbols-outlined">face_nod</span></a>
+<a class="hover:text-neon-red transition-all scale-125" href="#"><span class="material-symbols-outlined">music_note</span></a>
+</div>
+<!-- Upcoming Events Section -->
+<section class="px-margin-mobile md:px-margin-desktop py-stack-lg max-w-container-max mx-auto">
+<div class="flex items-center justify-between mb-stack-md border-b-4 border-on-background pb-4">
+<h2 class="font-headline-lg-mobile md:font-headline-lg text-headline-lg-mobile md:text-headline-lg uppercase">UPCOMING EVENTS:</h2>
+<div class="hidden md:block font-label-bold text-label-bold text-electric-blue">SELECT YOUR JOURNEY</div>
+</div>
+<div class="space-y-stack-lg">
+<!-- Event 1: Adrenaline -->
+<article class="grid grid-cols-1 lg:grid-cols-2 gap-stack-sm items-center">
+<div class="space-y-6 order-2 lg:order-1">
+<div class="flex items-baseline gap-4">
+<h3 class="font-display-xl-mobile text-display-xl-mobile uppercase">ADRENALINE</h3>
+<span class="font-headline-md text-headline-md text-neon-red">28.08.2026</span>
+</div>
+<div class="space-y-2">
+<p class="font-label-bold text-label-bold text-white/60 tracking-widest uppercase">ÄÄNIWALLI, HELSINKI</p>
+<h4 class="font-title-lg text-title-lg uppercase">NO FILMING. ONLY DANCING. HARD TECHNO.</h4>
+</div>
+<p class="font-body-lg text-body-lg max-w-xl">
+                        On 28.08.2026, Adrenaline is finally back as we know and love it… but this time in a new location, ÄÄNIWALLI. First headliner, JOVYNN, now announced! This is only the beginning…
+                    </p>
+<a class="inline-block bg-white text-black font-display-xl-mobile text-[24px] px-12 py-4 hover:bg-neon-red hover:text-white transition-colors duration-300 uppercase tracking-tight" href="#">ADRENALINE TICKETS</a>
+</div>
+<div class="order-1 lg:order-2 brutalist-border-thick relative group">
+<img class="w-full aspect-video object-cover grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A gritty, industrial event poster for Adrenaline featuring heavy grain and distorted typography. The central focus is an old vintage television screen displaying static and the name JOVYNN in bold black letters. The background is a dark, moody crimson red with thick industrial cables hanging from the top, creating a claustrophobic and intense warehouse vibe." src="https://lh3.googleusercontent.com/aida/AP1WRLuwsM8JmmXFUBf8TtcIallMLdoflI8BGD8A8nn87bEUzV8ejmJOqiYSt2QohX7li1U1WhOA7Ve6KM4qvPLDkymZtZyDqiMzmOmvYqO8Z57TFXSEvuNwXe7Alqaini3eQ3oYe70VJLGh_1joT7rJbgGj1tLy2UEd-VLPucxDdisxTy2OG2qkyI_Aann_fgKhq06D8CQr_vid9onIChYaKkwQeeNrQye60M6xYGnrITQd-qQst-fLgTr45Qh1"/>
+<div class="absolute top-4 left-4 bg-neon-red text-white px-4 py-1 font-label-bold text-label-bold">SOLD OUT SOON</div>
+</div>
+</article>
+<!-- Event 2: Verknipt -->
+<article class="grid grid-cols-1 lg:grid-cols-2 gap-stack-sm items-center">
+<div class="brutalist-border-thick relative group">
+<img class="w-full aspect-video object-cover" data-alt="High-contrast promotional graphic for Verknipt Finland featuring an abstract, glowing blue neon energy formation that looks like a chaotic digital scribble or a heartbeat sensor. The text 'VERKNIPT FINLAND' is set in a bold, modern sans-serif font against a pure black background. The overall aesthetic is clean yet aggressive, emphasizing the futuristic and electric nature of the event." src="https://lh3.googleusercontent.com/aida/AP1WRLt_7t1Z6qq19nR2i1e7HOimDgm8cp71mjps9I55zn1bHRIXEfgVhaU7ezONqNV96s5sB2Sw4GExZ-xx8zcc9hL1QkUAyW9Cxt1ilnMkV8nLpCkONkda8m_uzMe9CLzGCAndJjyNOYrIDVSaSOHqgS5IckMtpTdqBg2ztbAcofyikI2UvyAigRvPLHIxw6g2jvzZ5m_QEEjttgNTpQcFBQ3Kr-OPkmdnVyXyYHdnyMwiYg8JyEGNGLRz56bY"/>
+<div class="absolute bottom-4 right-4 bg-electric-blue text-black px-4 py-1 font-label-bold text-label-bold">FINLAND DEBUT</div>
+</div>
+<div class="space-y-6">
+<div class="flex items-baseline gap-4">
+<h3 class="font-display-xl-mobile text-display-xl-mobile uppercase">VERKNIPT</h3>
+<span class="font-headline-md text-headline-md text-electric-blue">30.10.2026</span>
+</div>
+<div class="space-y-2">
+<p class="font-label-bold text-label-bold text-white/60 tracking-widest uppercase">KAMELEONTEN ARENA</p>
+<h4 class="font-title-lg text-title-lg uppercase">THE LEGENDARY GLOBAL CONCEPT FINALLY IN FINLAND.</h4>
+</div>
+<p class="font-body-lg text-body-lg max-w-xl">
+                        Mark your calendars for the weekend of Halloween: VERKNIPT finally arrives in the Nordics. We're set for an unforgettable debut as this event marks Finland’s first-ever VERKNIPT indoor hard music rave.
+                    </p>
+<a class="inline-block bg-white text-black font-display-xl-mobile text-[24px] px-12 py-4 hover:bg-electric-blue hover:text-white transition-colors duration-300 uppercase tracking-tight" href="#">VERKNIPT TICKETS</a>
+</div>
+</article>
+<!-- Event 3: The Resistance -->
+<article class="grid grid-cols-1 lg:grid-cols-2 gap-stack-sm items-center">
+<div class="space-y-6 order-2 lg:order-1">
+<div class="flex items-baseline gap-4">
+<h3 class="font-display-xl-mobile text-display-xl-mobile uppercase">RESISTANCE</h3>
+<span class="font-headline-md text-headline-md text-on-surface-variant">31.10.2026</span>
+</div>
+<div class="space-y-2">
+<p class="font-label-bold text-label-bold text-white/60 tracking-widest uppercase">KAMELEONTEN ARENA</p>
+<h4 class="font-title-lg text-title-lg uppercase">OUR BIGGEST HARDSTYLE INDOOR EVENT TO DATE.</h4>
+</div>
+<p class="font-body-lg text-body-lg max-w-xl">
+                        This Halloween will hit different. Base 63 is calling out to you. Join Noisecontrollers, TNT, and Toza for a night of absolute mayhem.
+                    </p>
+<a class="inline-block bg-white text-black font-display-xl-mobile text-[24px] px-12 py-4 hover:bg-on-surface-variant hover:text-white transition-colors duration-300 uppercase tracking-tight" href="#">BASE 63 TICKETS</a>
+</div>
+<div class="order-1 lg:order-2 brutalist-border-thick relative group">
+<img class="w-full aspect-video object-cover grayscale hover:grayscale-0 transition-all duration-500" data-alt="A cinematic and apocalyptic event poster for The Resistance Base 63. The scene depicts a dark, industrial wasteland at night with a glowing red watchtower in the distance under a stormy, blood-red sky. In the foreground, the metal 'BASE 63' logo is weathered and rusted, surrounded by barbed wire, capturing a rebellious and high-energy hardstyle music atmosphere." src="https://lh3.googleusercontent.com/aida/AP1WRLvFZnB5sTwsSAo0WRW9eVsblqYGOKZbj0OHgvH4kFhjyoslz2Sp_wrKUZTz-W6K_-TTpbCcN9A-PK4x4t07cKuX0VxrIUiIsnqQ0f8Q25p5NjYC3vWtpxywOT0elrcZrv5c225fRX01VxWyjcv8_Ci-fsiRtLoyLoAwQ0qLez-XTBl17aRr8pA-duv2ah0yKFqcyrAOSTI253A3neqFFQbHpKs4Ay-fPLNnOyWgHzriOfed9jR1RWE2hm_L"/>
+</div>
+</article>
+</div>
+</section>
+<!-- Join the Fam / Newsletter -->
+<section class="relative py-stack-lg bg-surface-container-low overflow-hidden">
+<div class="texture-overlay absolute inset-0"></div>
+<div class="px-margin-mobile md:px-margin-desktop max-w-[800px] mx-auto text-center relative z-10">
+<h2 class="font-display-xl-mobile text-display-xl-mobile uppercase mb-4">JOIN THE FAM</h2>
+<p class="font-body-lg text-body-lg mb-stack-sm text-white/80">Sign up with your email address to receive exclusive discounts, pre-sales, and merch!</p>
+<form class="space-y-unit">
+<input class="w-full bg-transparent border-0 border-b-2 border-white focus:ring-0 focus:border-neon-red text-headline-md font-headline-md placeholder:opacity-30 p-4 transition-colors" placeholder="Email Address" type="email"/>
+<button class="w-full mt-stack-sm bg-white text-black font-display-xl-mobile text-[32px] py-6 hover:bg-neon-red hover:text-white transition-all active:scale-95 uppercase" type="submit">SIGN UP</button>
+</form>
+<p class="mt-8 font-label-bold text-label-bold opacity-50 uppercase tracking-tighter">We respect your privacy. No spam. Only rave.</p>
+</div>
+</section>
+<!-- Our Journey Section -->
+<section class="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0">
+<div class="absolute inset-0 bg-black/70 z-10 backdrop-blur-sm"></div>
+<img class="w-full h-full object-cover" data-alt="A beautiful, high-contrast black and white photograph of a young woman at a rave, smiling with her eyes closed and making a heart shape with her hands. The background is blurred with bokeh lights, focusing on the genuine emotional connection and joy of the music scene. The image captures the 'Safe place for everyone' ethos of Soundvault." src="https://lh3.googleusercontent.com/aida/AP1WRLsZzYGJmGTh8BjKgSVbXzQoPSdhqEMXzgcbHrDrNBCnStJiGPoi6jNa_ZikeXKprCvyrMf3fgxy6KiMITrkB9qv69RZg-0fmwmlUvkOXfBF97AOh4AePjZojc2LlGbgV-GyCZyluus1e3t-MJATXPFUVr77wjSZ4d_q1rYAn9acwYdV3MdnapLo-tqhMmF9D8P6mfnU5KiOLtEH42JCIsUnTCRjQJRKMJbEy2CDPDqrkPoduGMrpCA2aaYc"/>
+</div>
+<div class="relative z-20 text-center px-margin-mobile">
+<h3 class="font-label-bold text-label-bold text-neon-red tracking-[0.4em] uppercase mb-8">OUR JOURNEY</h3>
+<blockquote class="font-display-xl-mobile md:font-display-xl text-display-xl-mobile md:text-display-xl text-white uppercase italic max-w-5xl mx-auto leading-tight">
+                “We are here to change the Techno scene in Finland”
+            </blockquote>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile py-stack-md flex flex-col gap-unit items-center text-center border-t-4 border-on-background mt-stack-lg bg-background">
+<div class="font-headline-md text-headline-md text-on-background uppercase mb-8">SOUNDVAULT PROMOTIONS</div>
+<div class="flex flex-wrap justify-center gap-gutter mb-8">
+<a class="font-label-bold text-label-bold text-on-background hover:text-neon-red transition-all uppercase" href="#">INSTAGRAM</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-neon-red transition-all uppercase" href="#">FACEBOOK</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-neon-red transition-all uppercase" href="#">TIKTOK</a>
+<a class="font-label-bold text-label-bold text-on-background hover:text-neon-red transition-all uppercase" href="#">PRIVACY</a>
+</div>
+<p class="font-label-bold text-label-bold text-on-background opacity-60">
+            © 2024 SOUNDVAULT PROMOTIONS. NO FILMING. ONLY DANCING.
+        </p>
+<p class="font-label-bold text-label-bold text-on-background mt-4">
+            Contact us: <a class="text-electric-blue" href="mailto:info@soundvaultfi.com">info@soundvaultfi.com</a>
+</p>
+</footer>
+<!-- BottomNavBar (Mobile Only) -->
+<nav class="md:hidden fixed bottom-0 left-0 w-full z-50 flex justify-around items-center h-16 bg-background/95 dark:bg-background/95 backdrop-blur-2xl border-t-4 border-on-background">
+<a class="flex flex-col items-center justify-center bg-on-background text-background rounded-none p-4 w-1/4" href="#">
+<span class="material-symbols-outlined">home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-background p-4 w-1/4 hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">event</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-background p-4 w-1/4 hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">groups</span>
+</a>
+<a class="flex flex-col items-center justify-center text-on-background p-4 w-1/4 hover:bg-surface-container transition-all" href="#">
+<span class="material-symbols-outlined">mail</span>
+</a>
+</nav>
+<!-- Simple Cookie/Consent Bar (Stylized) -->
+<div class="fixed bottom-20 left-margin-mobile right-margin-mobile md:bottom-8 md:left-auto md:right-8 bg-background brutalist-border-thick p-6 z-[100] max-w-sm" id="consent-bar">
+<h5 class="font-label-bold text-label-bold mb-4 uppercase">BUY TICKETS &amp; COOKIES</h5>
+<p class="font-body-md text-sm mb-6 opacity-80">Select "Accept all" to agree to our use of cookies to enhance your browsing experience.</p>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-electric-blue text-black font-label-bold py-3 uppercase" onclick="document.getElementById('consent-bar').style.display='none'">ACCEPT ALL</button>
+<button class="bg-white text-black font-label-bold py-3 uppercase" onclick="document.getElementById('consent-bar').style.display='none'">MANAGE</button>
+</div>
+</div>
+<script>
+        // Smooth scroll for nav links (Simplified)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Sticky header reveal on scroll
+        let lastScroll = 0;
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            const header = document.querySelector('header');
+            if (currentScroll > lastScroll && currentScroll > 100) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            lastScroll = currentScroll;
+        });
+    </script>
+</body></html>
